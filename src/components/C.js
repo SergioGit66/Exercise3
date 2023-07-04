@@ -1,12 +1,12 @@
 import Button from "./Button";
 
 const C = (props) => {
-    const { buttonX } = props;
+    const { value } = props;
     return (
         <div className="ComponentC" >
             <h1>Component C</h1>
-
-            <Button />
+            
+            <Button value={value}/>
         </div>
     )
 }

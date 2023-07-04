@@ -1,13 +1,13 @@
 import { useState } from "react";
 
-const Button = () => {
-    const [numberX, setNumberX] = useState(0);
+const Button = (props) => {
+    const {value} = props;
+    const [numberX, setNumberX] = useState(value);
 
     const countX = () => {
         setNumberX(numberX => numberX + 1);
 
     };
-
 
     return (
         <div className="button">

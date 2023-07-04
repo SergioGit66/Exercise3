@@ -8,7 +8,7 @@ const A = (props) => {
         <div className="ComponentA" >
             <h1>Component A</h1>
             <p>X = {valueX} </p>
-            <B valueX = '42' />
+            <B value={valueX}/>
         </div>
     )
 }
